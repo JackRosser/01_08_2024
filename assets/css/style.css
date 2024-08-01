@@ -10,21 +10,27 @@ font-family: "Poppins", sans-serif;
 main {
     margin: auto;
     width: 390px;
-   background-color: red;
-    /* background-image: url('./img/sfondo.png'); */
+
+    background-image: url('./img/sfondo.png'); */
     background-size: cover;
       background-position: center;
-    
+      padding-top: 20px;
+      padding-bottom: 20px;
+      
+}
+
+.shadow {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 header {
-text-align: center;
+margin: auto;
+    text-align: center;
     text-transform: uppercase;
     color: white;
     background: linear-gradient(to bottom, #469CC0, gray);
-   margin: 20px;
-   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
-
+  
+  width: 350px;
 }
   
 header a {
