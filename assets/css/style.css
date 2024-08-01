@@ -20,19 +20,26 @@ main {
 }
 
 .shadow {
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 header {
-margin: auto;
+
     text-align: center;
     text-transform: uppercase;
     color: white;
     background: linear-gradient(to bottom, #469CC0, gray);
   
-  width: 350px;
-}
   
+}
+
+header, section {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
 header a {
     color: white;
     text-decoration: none;
@@ -47,11 +54,101 @@ width: 60%;
 padding: 5%;
   }
 
-.menu ul li::before {
+
+  ol {
+    counter-reset: list-counter; /* Inizializza il contatore */
+  }
+  
+  ol li {
+    counter-increment: list-counter; /* Incrementa il contatore per ogni elemento della lista */
+  }
+
+  ol li::before {
+    content: counter(list-counter) ". ";
+}
+
+ul li::before {
+    content: "•";
+}
+
+  .menu ul li::before {
     content: "⇒ ";
 
 }
 .menu ul li::after {
     content: "⇐ ";
 
+}
+
+section {
+    
+    background-color: red;
+ padding-top: 30px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+ line-height: 1.2;
+}
+
+section h3 {
+    color: rgb(177, 177, 177);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    
+}
+
+.violet {
+    color: rgb(85, 48, 85);
+}
+
+.demo {
+    background-color: rgb(186, 183, 183);
+    border-radius: 5px;
+    border: 2px solid rgb(134, 134, 134);
+}
+
+.lista {
+    line-height: 1.5;
+}
+
+.operations ol {
+    margin-block: 20px;
+    line-height: 1.5;
+}
+
+.border-violet {
+    height: 2px;
+    background-color: #3366CC;
+}
+
+.diffusione {
+    margin-block: 20px;
+    
+}
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+th {
+    background-color: #3366CC;
+    color: white;
+    padding-block: 10px;
+    padding-inline: 10px;
+    vertical-align: bottom;
+    text-align: center;
+    border: 1px solid white;
+}
+
+td {
+    background-color: #ffffff;
+    padding-block: 20px;
+    padding-inline: 20px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid white;
 }
