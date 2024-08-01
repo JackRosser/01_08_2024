@@ -15,7 +15,6 @@ main {
     background-size: cover;
       background-position: center;
       padding-top: 20px;
-      padding-bottom: 20px;
       
 }
 
@@ -26,11 +25,16 @@ main {
 header {
 
     text-align: center;
-    text-transform: uppercase;
+   text-transform: uppercase;  /* per il maiuscolo */
     color: white;
     background: linear-gradient(to bottom, #469CC0, gray);
+    padding-inline: 20px;
   
   
+}
+
+h2 {
+    text-transform: uppercase;
 }
 
 header, section {
@@ -80,6 +84,8 @@ ul li::before {
 
 }
 
+/* todo togliere red */
+
 section {
     
     background-color: red;
@@ -126,6 +132,10 @@ h1 {
     background-color: #3366CC;
 }
 
+.operations .border-violet {
+    margin-bottom: 30px;
+}
+
 .diffusione {
     margin-block: 20px;
     
@@ -152,3 +162,25 @@ td {
     text-align: center;
     border: 1px solid white;
 }
+
+tr:nth-child(even) td {
+    background-color: #EEEEEE;
+    border: 2px solid #DDDDDE;
+  }
+
+  .video {
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .graybox {
+    background-color: #DBDBDC;
+    padding-inline: 20px;
+    padding-block: 20px;
+    margin-block: 20px;
+    border: 1px solid gray;
+  }
+
+  .graybox a {
+    color: #05AACD;
+  }
