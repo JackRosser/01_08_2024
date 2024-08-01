@@ -10,7 +10,7 @@ main {
   width: 390px;
 
   background-image: url("./img/sfondo.png");
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   padding-top: 20px;
 }
@@ -35,7 +35,8 @@ h2 {
 }
 
 header,
-section {
+section,
+footer {
   margin: auto;
   margin-bottom: 20px;
   width: 350px;
@@ -171,6 +172,7 @@ tr:nth-child(even) td {
   padding-block: 20px;
   margin-block: 20px;
   border: 1px solid gray;
+  line-height: 1.5;
 }
 
 .graybox a {
@@ -191,4 +193,19 @@ button {
 
 .data {
   font-size: small;
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer {
+  color: white;
+  background: linear-gradient(to bottom, #469cc0, gray);
+  padding-block: 20px;
+  padding-inline: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+footer .mail {
+  color: violet;
 }
