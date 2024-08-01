@@ -1,201 +1,194 @@
 body {
-margin: 0;
-font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-
-
 }
 
 main {
-    margin: auto;
-    width: 390px;
+  margin: auto;
+  width: 390px;
 
-    background-image: url('./img/sfondo.png');
-    background-size: cover;
-      background-position: center;
-      padding-top: 20px;
-      
+  background-image: url("./img/sfondo.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
 }
 
 .shadow {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 header {
-
-    text-align: center;
-   text-transform: uppercase;  /* per il maiuscolo */
-    color: white;
-    background: linear-gradient(to bottom, #469CC0, gray);
-    padding-inline: 20px;
-  
-  
+  text-align: center;
+  text-transform: uppercase; /* per il maiuscolo */
+  color: white;
+  background: linear-gradient(to bottom, #469cc0, gray);
+  padding-inline: 20px;
 }
 
 h2 {
-    text-transform: uppercase;
-    font-size: 25px;
-    margin-block: 10px;
-    text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-block: 10px;
+  text-align: center;
 }
 
-header, section {
-    margin: auto;
-    margin-bottom: 20px;
-    width: 350px;
-    box-sizing: border-box;
+header,
+section {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 350px;
+  box-sizing: border-box;
 }
 
 header a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 header ul {
-    line-height: 1.5;
-    padding: 5%;
+  line-height: 1.5;
+  padding: 5%;
 }
 
 .logo {
-width: 60%;
-padding: 5%;
-  }
+  width: 60%;
+  padding: 5%;
+}
 
+ol {
+  counter-reset: list-counter; /* Inizializza il contatore */
+}
 
-  ol {
-    counter-reset: list-counter; /* Inizializza il contatore */
-  }
-  
-  ol li {
-    counter-increment: list-counter; /* Incrementa il contatore per ogni elemento della lista */
-  }
+ol li {
+  counter-increment: list-counter; /* Incrementa il contatore per ogni elemento della lista */
+}
 
-  ol li::before {
-    content: counter(list-counter) ". ";
+ol li::before {
+  content: counter(list-counter) ". ";
 }
 
 ul li::before {
-    content: "•";
+  content: "•";
 }
 
-  .menu ul li::before {
-    content: "⇒ ";
-
+.menu ul li::before {
+  content: "⇒ ";
 }
 .menu ul li::after {
-    content: "⇐ ";
-
+  content: "⇐ ";
 }
 
 /* todo togliere red */
 
 section {
-    
-    background-color: rgb(255, 255, 255);
- padding-top: 30px;
- padding-left: 20px;
- padding-right: 20px;
- padding-bottom: 20px;
- line-height: 1.2;
+  background-color: rgb(255, 255, 255);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  line-height: 1.2;
 }
 
 section h3 {
-    color: rgb(177, 177, 177);
-    margin-top: 20px;
-    margin-bottom: 20px;
+  color: rgb(177, 177, 177);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: 1.5;
-    
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .violet {
-    color: rgb(85, 48, 85);
+  color: rgb(85, 48, 85);
 }
 
 .demo {
-    background-color: rgb(186, 183, 183);
-    border-radius: 5px;
-    border: 2px solid rgb(134, 134, 134);
+  background-color: rgb(186, 183, 183);
+  border-radius: 5px;
+  border: 2px solid rgb(134, 134, 134);
 }
 
 .lista {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .operations ol {
-    margin-block: 20px;
-    line-height: 1.5;
+  margin-block: 20px;
+  line-height: 1.5;
 }
 
 .border-violet {
-    height: 2px;
-    background-color: #3366CC;
+  height: 2px;
+  background-color: #3366cc;
 }
 
 .operations .border-violet {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .diffusione {
-    margin-block: 20px;
-    
+  margin-block: 20px;
 }
 caption {
-    font-weight: bold;
-    font-style: italic;
+  font-weight: bold;
+  font-style: italic;
 }
 th {
-    background-color: #3366CC;
-    color: white;
-    padding-block: 10px;
-    padding-inline: 10px;
-    vertical-align: bottom;
-    text-align: center;
-    border: 1px solid white;
+  background-color: #3366cc;
+  color: white;
+  padding-block: 10px;
+  padding-inline: 10px;
+  vertical-align: bottom;
+  text-align: center;
+  border: 1px solid white;
 }
 
 td {
-    background-color: #ffffff;
-    padding-block: 20px;
-    padding-inline: 20px;
-    vertical-align: middle;
-    text-align: center;
-    border: 1px solid white;
+  background-color: #ffffff;
+  padding-block: 20px;
+  padding-inline: 20px;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid white;
 }
 
 tr:nth-child(even) td {
-    background-color: #EEEEEE;
-    border: 2px solid #DDDDDE;
-  }
+  background-color: #eeeeee;
+  border: 2px solid #ddddde;
+}
 
-  .video {
-    border-radius: 20px;
-    margin-top: 20px;
-  }
+.video {
+  border-radius: 20px;
+  margin-top: 20px;
+}
 
-  .graybox {
-    background-color: #DBDBDC;
-    padding-inline: 20px;
-    padding-block: 20px;
-    margin-block: 20px;
-    border: 1px solid gray;
-  }
+.graybox {
+  background-color: #dbdbdc;
+  padding-inline: 20px;
+  padding-block: 20px;
+  margin-block: 20px;
+  border: 1px solid gray;
+}
 
-  .graybox a {
-    color: #05AACD;
-  }
+.graybox a {
+  color: #05aacd;
+}
 
-  form {
-    margin-top: 20px;
-  }
+form {
+  margin-top: 20px;
+}
 
-  button {
-    color: white;
-    background-color: #3366CC;
-    border: 0px;
-    padding-inline: 5px;
-    padding-block: 5px;
-  }
+button {
+  color: white;
+  background-color: #3366cc;
+  border: 0px;
+  padding-inline: 5px;
+  padding-block: 5px;
+}
+
+.data {
+  font-size: small;
+}
